@@ -49,8 +49,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 xsetroot -cursor_name left_ptr
-$HOME/.dotfiles/install.sh
-
+~/.dotfiles/screenlayout.sh
 nitrogen --restore &
 picom -f &
 exec bspwm
