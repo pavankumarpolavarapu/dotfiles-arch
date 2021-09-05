@@ -61,8 +61,8 @@ font-4 = Font Awesome 5 Free Solid:pixelsize=12;2
 font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
 modules-left = bspwm 
-modules-center = xwindow pacman-updates
-modules-right = filesystem pulseaudio xkeyboard memory cpu eth date powermenu
+modules-center = xwindow 
+modules-right = filesystem pulseaudio memory cpu eth date powermenu
 
 separator = |
 tray-position = none
@@ -117,7 +117,7 @@ font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
 modules-left = bspwm 
 modules-center = xwindow 
-modules-right = filesystem pulseaudio xkeyboard memory cpu eth date powermenu
+modules-right = filesystem pulseaudio memory cpu eth date powermenu
 
 separator = |
 tray-position = none
@@ -136,7 +136,7 @@ format-prefix-foreground = #ffbb00
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+label = %title:0:50:...%
 format = <label>
 
 [module/spotify]
@@ -318,7 +318,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = enp1s0
+interface = eno2 
 interval = 3.0
 
 format-connected-underline = #55aa55
@@ -352,7 +352,7 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume =  %percentage%%
+label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = ? muted
